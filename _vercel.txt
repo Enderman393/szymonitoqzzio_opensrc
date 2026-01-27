@@ -1,0 +1,1 @@
+vc-domain-verify=szymonito.qzz.io,7a492cd3b924b34b3170
