@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EXPLOSIVE DIARHEA</title>
+
+<style>
+* {
+  font-family: "Comic Sans MS", cursive !important;
+}
+
+body {
+  margin: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    brown,
+    brown 20px,
+    orange 20px,
+    orange 40px
+  );
+  animation: bg 0.3s infinite;
+  text-align: center;
+  color: white;
+}
+
+@keyframes bg {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+h1 {
+  font-size: 90px;
+  text-shadow: 6px 6px black;
+}
+
+button {
+  font-size: 40px;
+  padding: 25px 50px;
+  background: linear-gradient(red, yellow);
+  border: 10px dashed black;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.4) rotate(10deg);
+}
+
+.ad {
+  margin-top: 40px;
+  border: 10px solid red;
+  cursor: pointer;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<h1>💥 EXPLOSIVE DIARHEA 💥</h1>
+
+<p style="font-size:30px;">
+ADS ARE RANDOM.<br>
+OUTCOME UNKNOWN.
+</p>
+
+<button onclick="location.href='PUT_YOUR_YT_LINK_HERE'">
+💣 CLICK FOR DESTINY 💣
+</button>
+
+<br><br>
+
+<img src="ad.png" class="ad" onclick="openAd()" alt="AD">
+
+<br><br>
+
+<button onclick="location.href='index.html'">
+⬅️ BACK TO SZYMONITO
+</button>
+
+<script>
+const adLinks = [
+  "https://www.youtube.com",
+  "https://en.wikipedia.org/wiki/Chaos",
+  "https://www.google.com/search?q=what+did+i+just+click",
+  "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+];
+
+function openAd() {
+  const random = Math.floor(Math.random() * adLinks.length);
+  window.open(adLinks[random], "_blank");
+}
+</script>
+
+</body>
+</html>

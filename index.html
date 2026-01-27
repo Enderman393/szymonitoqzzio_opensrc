@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SZYMONITO CHAOS</title>
+
+<style>
+* {
+  font-family: "Comic Sans MS", cursive !important;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  animation: bg 0.25s infinite;
+}
+
+@keyframes bg {
+  0% { background: red; }
+  25% { background: yellow; }
+  50% { background: lime; }
+  75% { background: cyan; }
+  100% { background: magenta; }
+}
+
+h1 {
+  text-align: center;
+  font-size: 120px;
+  color: white;
+  text-shadow: 8px 8px black;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  font-size: 40px;
+  padding: 20px 40px;
+  border: 10px dashed black;
+  background: linear-gradient(red, blue);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.5) rotate(10deg);
+}
+
+.ad {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 8px solid yellow;
+  animation: adshake 0.2s infinite;
+}
+
+@keyframes adshake {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
+}
+
+.marq {
+  font-size: 40px;
+  background: black;
+  color: lime;
+}
+</style>
+</head>
+
+<body>
+
+<marquee class="marq" scrollamount="20">
+🔥💥 SZYMONITO CHAOS + ADS ENABLED 💥🔥
+</marquee>
+
+<h1>SZYMONITO</h1>
+
+<button onclick="location.href='page2.html'">
+➡️ GO TO PAGE 2 ⬅️
+</button>
+
+<button onclick="location.href='explosivediarhea.html'">
+💥 ENTER EXPLOSIVE DIARHEA 💥
+</button>
+
+<img src="ad.png" class="ad" alt="AD">
+
+<script>
+setInterval(() => {
+  document.title = "💥 SZYMONITO 💥 " + Math.random();
+}, 100);
+</script>
+
+</body>
+</html>
